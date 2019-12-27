@@ -45,6 +45,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.skinWaterTextBox1);
             this.groupBox1.Location = new System.Drawing.Point(7, 314);
             this.groupBox1.Name = "groupBox1";
@@ -55,6 +57,8 @@
             // 
             // skinWaterTextBox1
             // 
+            this.skinWaterTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.skinWaterTextBox1.Location = new System.Drawing.Point(6, 20);
             this.skinWaterTextBox1.Multiline = true;
             this.skinWaterTextBox1.Name = "skinWaterTextBox1";
@@ -77,6 +81,8 @@
             // 
             // tb_url
             // 
+            this.tb_url.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_url.BackColor = System.Drawing.Color.Transparent;
             this.tb_url.DownBack = null;
             this.tb_url.Icon = null;
@@ -85,8 +91,8 @@
             this.tb_url.IsPasswordChat = '\0';
             this.tb_url.IsSystemPasswordChar = false;
             this.tb_url.Lines = new string[] {
-        "skinTextBox1"};
-            this.tb_url.Location = new System.Drawing.Point(57, 35);
+        "https://www.toutiao.com/c/user/3082650775207548/#mid=1626798500652039"};
+            this.tb_url.Location = new System.Drawing.Point(56, 33);
             this.tb_url.Margin = new System.Windows.Forms.Padding(0);
             this.tb_url.MaxLength = 32767;
             this.tb_url.MinimumSize = new System.Drawing.Size(28, 28);
@@ -107,13 +113,13 @@
             this.tb_url.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
             this.tb_url.SkinTxt.Location = new System.Drawing.Point(5, 5);
             this.tb_url.SkinTxt.Name = "BaseText";
-            this.tb_url.SkinTxt.Size = new System.Drawing.Size(613, 18);
+            this.tb_url.SkinTxt.Size = new System.Drawing.Size(631, 18);
             this.tb_url.SkinTxt.TabIndex = 0;
-            this.tb_url.SkinTxt.Text = "skinTextBox1";
+            this.tb_url.SkinTxt.Text = "https://www.toutiao.com/c/user/3082650775207548/#mid=1626798500652039";
             this.tb_url.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_url.SkinTxt.WaterText = "";
             this.tb_url.TabIndex = 2;
-            this.tb_url.Text = "skinTextBox1";
+            this.tb_url.Text = "https://www.toutiao.com/c/user/3082650775207548/#mid=1626798500652039";
             this.tb_url.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.tb_url.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_url.WaterText = "";
@@ -121,10 +127,11 @@
             // 
             // btn_star
             // 
+            this.btn_star.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_star.BackColor = System.Drawing.Color.Transparent;
             this.btn_star.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.btn_star.DownBack = null;
-            this.btn_star.Location = new System.Drawing.Point(712, 35);
+            this.btn_star.Location = new System.Drawing.Point(701, 34);
             this.btn_star.MouseBack = null;
             this.btn_star.Name = "btn_star";
             this.btn_star.NormlBack = null;
@@ -132,11 +139,15 @@
             this.btn_star.TabIndex = 3;
             this.btn_star.Text = "开 始";
             this.btn_star.UseVisualStyleBackColor = false;
+            this.btn_star.Click += new System.EventHandler(this.Btn_star_Click);
             // 
             // skinDataGridView1
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
             this.skinDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.skinDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.skinDataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.skinDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.skinDataGridView1.ColumnFont = null;
