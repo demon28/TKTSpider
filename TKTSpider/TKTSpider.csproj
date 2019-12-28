@@ -82,7 +82,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Spider\QueueDuplicateRemovedScheduler.cs" />
+    <Compile Include="Spider\TotiaoPipeline.cs" />
     <Compile Include="Spider\TouTiaoPageProcessor.cs" />
     <Compile Include="Spider\TouTiaoVideo.cs" />
     <EmbeddedResource Include="BaseForm\BaseFrom.resx">

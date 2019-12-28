@@ -1,4 +1,6 @@
 ﻿using DotnetSpider.Core;
+using DotnetSpider.Core.Downloader;
+using DotnetSpider.Core.Scheduler;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,13 +33,8 @@ namespace TKTSpider
 
             site.AddStartUrl(url);
 
-            Spider spider = Spider.Create(site,
-                // use memoery queue scheduler. 使用内存调度
-                new QueueDuplicateRemovedScheduler(),
-                // use custmize processor for youku 为优酷自定义的 Processor
-                new TouTiaoPageProcessor())
-                // use custmize pipeline for youku 为优酷自定义的 Pipeline
-                .AddPipeline(new YoukuPipeline());
+            DotnetSpider.Core.Spider spider = DotnetSpider.Core.Spider.Create(site, new QueueDuplicateRemovedScheduler(), new TouTiaoPageProcessor());
+            spider.AddPipeline(new TotiaoPipeline());
             spider.Downloader = new HttpClientDownloader();
             spider.ThreadNum = 1;
             spider.EmptySleepTime = 3000;

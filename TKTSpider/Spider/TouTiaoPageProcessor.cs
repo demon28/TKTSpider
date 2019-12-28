@@ -8,7 +8,10 @@ using System.Threading.Tasks;
 
 namespace TKTSpider.Spider
 {
-   public class TouTiaoPageProcessor : BasePageProcessor
+    /// <summary>
+    /// 定义数据抽取
+    /// </summary>
+    public class TouTiaoPageProcessor : BasePageProcessor
     {
         protected override void Handle(Page page)
         {
